@@ -36,41 +36,47 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container slide-in-left">
-        <img src="./assets/profile-pic.png" alt="Pardhu Reddy profile picture" />
-      </div>
-      <div class="section__text slide-in-right">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Pardhu</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 bounce-in"
-            onclick="window.open('./assets/Resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1 bounce-in" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container" class="fade-in-up">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https:www.linkedin.com/in/pardhasaradhireddy'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
+   <section id="profile">
+  <div class="section__pic-container slide-in-left">
+    <img src="./assets/profile-pic.png" alt="Pardhu Reddy profile picture" />
+  </div>
+  <div class="section__text slide-in-right">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Pardhu</h1>
+    <p class="section__text__p2"></p>
+    <!-- New Description Lines -->
+    <div class="hero-description fade-in-up">
+      <p class="hero-tagline-main">🚀 Building AI systems that learn, adapt, and make a difference.</p>
+      <p class="hero-tagline-sub">All things LLMs, RAG, and multi-agent workflows — yep, I do them all.</p>
+    </div>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2 bounce-in"
+        onclick="window.open('./assets/Resume.pdf')"
+      >
+        Download CV
+      </button>
+      <button class="btn btn-color-1 bounce-in" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
+    </div>
+    <div id="socials-container" class="fade-in-up">
+      <img
+        src="./assets/linkedin.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="location.href='https:www.linkedin.com/in/pardhasaradhireddy'"
+      />
+      <img
+        src="./assets/github.png"
+        alt="My Github profile"
+        class="icon"
+        onclick="location.href='https://github.com/'"
+      />
+    </div>
+  </div>
+</section>
+
     <section id="about">
       <p class="section__text__p1 fade-in-up">Get To Know More</p>
       <h1 class="title fade-in-up">About Me</h1>
@@ -278,147 +284,206 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
+<section id="projects">
   <p class="section__text__p1 fade-in-up">Browse My Recent</p>
   <h1 class="title fade-in-up">Projects</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container color-container scale-in">
-        <div class="project-content">
-          <div class="article-container">
-            <img
-              src="./assets/mekht-GuvimT4IFok-unsplash.jpg"
-              alt="Project 1"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Food Munch</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/PardhaSarathy/FoodMunch.git'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://parthasaradhi.ccbp.tech/'"
-            >
-              Live Demo
-            </button>
+  
+  <!-- Filter Tabs -->
+  <div class="project-filters fade-in-up">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+    <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+    <button class="filter-btn" data-filter="full-stack">Full Stack</button>
+  </div>
+  
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+    <!-- AI Travel Planning System -->
+    <div class="project-card scale-in" data-category="ai-ml full-stack">
+      <div class="project-image-container">
+        <img src="./assets/Travel_planning.jpg" alt="AI Travel Planning System" class="project-card-img" />
+        <div class="project-tags-overlay">
+          <div class="project-tags">
+            <span class="tag ai-tag">RAG</span>
+            <span class="tag ai-tag">Vector DB</span>
+            <span class="tag tech-tag">Python</span>
+            <span class="tag tech-tag">Streamlit</span>
           </div>
         </div>
       </div>
-
-      <div class="details-container color-container scale-in">
-        <div class="project-content">
-          <div class="article-container">
-            <img
-              src="./assets/marissa-grootes-flRm0z3MEoA-unsplash.jpg"
-              alt="Project 2"
-              class="project-img"
-            />
+      <div class="project-card-content">
+        <h3 class="project-card-title">AI Travel Planning System</h3>
+        <p class="project-card-description">Intelligent travel planning application using LLM agents for personalized itinerary generation with real-time data integration.</p>
+        <div class="project-stats">
+          <div class="stat">
+            <span class="stat-icon">👁</span>
+            <span>1.2k views</span>
           </div>
-          <h2 class="experience-sub-title project-title">TODO LIST</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/PardhaSarathy/TODO.git'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://pardhasaradhi7.ccbp.tech/'"
-            >
-              Live Demo
-            </button>
+          <div class="stat">
+            <span class="stat-icon">🤖</span>
+            <span>AI-Powered</span>
+          </div>
+        </div>
+        <div class="project-actions">
+          <button class="project-btn-secondary" onclick="location.href='https://github.com/PardhaSarathy/FINAL_PROJECT.git'">
+            GitHub
+          </button>
+          <button class="project-btn-primary" onclick="location.href='https://pardhu-travelplanner.vercel.app/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FitVisor -->
+    <div class="project-card scale-in" data-category="ai-ml">
+      <div class="project-image-container">
+        <img src="./assets/Workout plan.jpg" alt="FitVisor - AI Fitness Coach" class="project-card-img" />
+        <div class="project-tags-overlay">
+          <div class="project-tags">
+            <span class="tag ai-tag">RAG</span>
+            <span class="tag ai-tag">Vector DB</span>
+            <span class="tag tech-tag">Python</span>
+            <span class="tag web-tag">Streamlit</span>
           </div>
         </div>
       </div>
-
-      <div class="details-container color-container scale-in">
-        <div class="project-content">
-          <div class="article-container">
-            <img
-              src="./assets/possessed-photography-YKW0JjP7rlU-unsplash.jpg"
-              alt="Project 3"
-              class="project-img"
-            />
+      <div class="project-card-content">
+        <h3 class="project-card-title">FitVisor - AI Fitness Coach</h3>
+        <p class="project-card-description">RAG-based fitness coaching system providing personalized workout plans and nutrition advice using advanced NLP.</p>
+        <div class="project-stats">
+          <div class="stat">
+            <span class="stat-icon">👥</span>
+            <span>500+ users</span>
           </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/PardhaSarathy/genAI_ChatBot.git'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://pardhugenai.ccbp.tech/'"
-            >
-              Live Demo
-            </button>
+          <div class="stat">
+            <span class="stat-icon">🎯</span>
+            <span>RAG System</span>
+          </div>
+        </div>
+        <div class="project-actions">
+          <button class="project-btn-secondary" onclick="location.href='https://github.com/PardhaSarathy/fitvisor-app.git'">
+            GitHub
+          </button>
+          <button class="project-btn-primary" onclick="location.href='https://fitvisor.streamlit.app/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Multi-Agent AI Assistant -->
+    <div class="project-card scale-in" data-category="ai-ml">
+      <div class="project-image-container">
+        <img src="./assets/possessed-photography-YKW0JjP7rlU-unsplash.jpg" alt="Multi-Agent AI Assistant" class="project-card-img" />
+        <div class="project-tags-overlay">
+          <div class="project-tags">
+            <span class="tag ai-tag">LLMs</span>
+            <span class="tag ai-tag">Multi-Agent</span>
+            <span class="tag tech-tag">Python</span>
+            <span class="tag web-tag">Streamlit</span>
           </div>
         </div>
       </div>
-
-      <div class="details-container color-container scale-in">
-        <div class="project-content">
-          <div class="article-container">
-            <img
-              src="./assets/Workout plan.jpg"
-              alt="Project 4"
-              class="project-img"
-            />
+      <div class="project-card-content">
+        <h3 class="project-card-title">Multi-Agent AI Assistant</h3>
+        <p class="project-card-description">Advanced conversational AI system with memory, context awareness, and multi-domain expertise using state-of-the-art LLMs.</p>
+        <div class="project-stats">
+          <div class="stat">
+            <span class="stat-icon">💬</span>
+            <span>Smart Chat</span>
           </div>
-          <h2 class="experience-sub-title project-title">FitVisor</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/PardhaSarathy/fitvisor-app.git'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://fitvisor.streamlit.app/'"
-            >
-              Live Demo
-            </button>
+          <div class="stat">
+            <span class="stat-icon">🤝</span>
+            <span>Multi-Agent</span>
+          </div>
+        </div>
+        <div class="project-actions">
+          <button class="project-btn-secondary" onclick="location.href='https://github.com/PardhaSarathy/genAI_ChatBot.git'">
+            GitHub
+          </button>
+          <button class="project-btn-primary" onclick="location.href='https://pardhugenai.ccbp.tech/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Munch -->
+    <div class="project-card scale-in" data-category="web-dev">
+      <div class="project-image-container">
+        <img src="./assets/mekht-GuvimT4IFok-unsplash.jpg" alt="Food Munch" class="project-card-img" />
+        <div class="project-tags-overlay">
+          <div class="project-tags">
+            <span class="tag web-tag">HTML5</span>
+            <span class="tag web-tag">CSS3</span>
+            <span class="tag web-tag">JavaScript</span>
+            <span class="tag tech-tag">Responsive</span>
           </div>
         </div>
       </div>
+      <div class="project-card-content">
+        <h3 class="project-card-title">Food Munch</h3>
+        <p class="project-card-description">Modern food delivery website with responsive design, interactive features, and optimized user experience.</p>
+        <div class="project-stats">
+          <div class="stat">
+            <span class="stat-icon">👁</span>
+            <span>2.1k views</span>
+          </div>
+          <div class="stat">
+            <span class="stat-icon">📱</span>
+            <span>Responsive</span>
+          </div>
+        </div>
+        <div class="project-actions">
+          <button class="project-btn-secondary" onclick="location.href='https://github.com/PardhaSarathy/FoodMunch.git'">
+            GitHub
+          </button>
+          <button class="project-btn-primary" onclick="location.href='https://parthasaradhi.ccbp.tech/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
 
-      <div class="details-container color-container scale-in">
-        <div class="project-content">
-          <div class="article-container">
-            <img
-              src="./assets/Travel_planning.jpg"
-              alt="Project 5"
-              class="project-img"
-            />
+    <!-- TODO List Application -->
+    <div class="project-card scale-in" data-category="web-dev">
+      <div class="project-image-container">
+        <img src="./assets/marissa-grootes-flRm0z3MEoA-unsplash.jpg" alt="TODO List Application" class="project-card-img" />
+        <div class="project-tags-overlay">
+          <div class="project-tags">
+            <span class="tag web-tag">JavaScript</span>
+            <span class="tag web-tag">LocalStorage</span>
+            <span class="tag web-tag">CSS3</span>
+            <span class="tag tech-tag">SPA</span>
           </div>
-          <h2 class="experience-sub-title project-title">Travel Planning Using AI</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/PardhaSarathy/FINAL_PROJECT.git'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://pardhu-travelplanner.vercel.app/'"
-            >
-              Live Demo
-            </button>
+        </div>
+      </div>
+      <div class="project-card-content">
+        <h3 class="project-card-title">TODO List Application</h3>
+        <p class="project-card-description">Feature-rich task management application with local storage, priority levels, and intuitive user interface.</p>
+        <div class="project-stats">
+          <div class="stat">
+            <span class="stat-icon">👁</span>
+            <span>1.8k views</span>
           </div>
+          <div class="stat">
+            <span class="stat-icon">✅</span>
+            <span>Task Manager</span>
+          </div>
+        </div>
+        <div class="project-actions">
+          <button class="project-btn-secondary" onclick="location.href='https://github.com/PardhaSarathy/TODO.git'">
+            GitHub
+          </button>
+          <button class="project-btn-primary" onclick="location.href='https://pardhasaradhi7.ccbp.tech/'">
+            Live Demo
+          </button>
         </div>
       </div>
     </div>
   </div>
+
   <img
     src="./assets/arrow.png"
     alt="Arrow icon"
@@ -426,6 +491,8 @@
     onclick="location.href='./#contact'"
   />
 </section>
+
+
 
     <section id="contact">
       <p class="section__text__p1 fade-in-up">Get in Touch</p>
